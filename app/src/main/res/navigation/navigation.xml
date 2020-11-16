@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentone">
+
+    <fragment
+        android:id="@+id/fragmentone"
+        android:name="com.example.commuteapp.FragmentOne"
+        android:label="fragment_fragmentone"
+        tools:layout="@layout/fragment_fragmentone" >
+        <action
+            android:id="@+id/action_fragmentone_to_fragmenttwo"
+            app:destination="@id/fragmenttwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmenttwo"
+        android:name="com.example.commuteapp.FragmentTwo"
+        android:label="fragment_fragmenttwo"
+        tools:layout="@layout/fragment_fragmenttwo" >
+        <action
+            android:id="@+id/action_fragmenttwo_to_fragmentthree"
+            app:destination="@id/fragmentthree" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentthree"
+        android:name="com.example.commuteapp.FragmentThree"
+        android:label="fragment_fragmentthree"
+        tools:layout="@layout/fragment_fragmentthree" >
+        <action
+            android:id="@+id/action_fragmentthree_to_fragmentone"
+            app:destination="@id/fragmentone" />
+    </fragment>
+</navigation>
