@@ -11,17 +11,8 @@
         android:label="fragment_fragmentone"
         tools:layout="@layout/fragment_fragmentone" >
         <action
-            android:id="@+id/action_fragmentone_to_fragmenttwo"
-            app:destination="@id/fragmenttwo" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragmenttwo"
-        android:name="com.example.commuteapp.FragmentTwo"
-        android:label="fragment_fragmenttwo"
-        tools:layout="@layout/fragment_fragmenttwo" >
-        <action
-            android:id="@+id/action_fragmenttwo_to_fragmentthree"
-            app:destination="@id/fragmentthree" />
+            android:id="@+id/action_fragmentone_to_mapActivity"
+            app:destination="@id/mapActivity" />
     </fragment>
     <fragment
         android:id="@+id/fragmentthree"
@@ -32,4 +23,9 @@
             android:id="@+id/action_fragmentthree_to_fragmentone"
             app:destination="@id/fragmentone" />
     </fragment>
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="com.example.commuteapp.MapActivity"
+        android:label="activity_map"
+        tools:layout="@layout/activity_map" />
 </navigation>

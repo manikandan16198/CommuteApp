@@ -1,11 +1,11 @@
 package com.example.commuteapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 
 
@@ -22,7 +22,7 @@ class FragmentOne : Fragment() {
 
         fragmentOne.setOnClickListener{
 
-            Navigation.findNavController(view).navigate(R.id.fragmenttwo)
+            Navigation.findNavController(view).navigate(R.id.mapActivity)
 
         }
         return  view

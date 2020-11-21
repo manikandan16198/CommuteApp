@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:ignore = "LabelFor"
+
     tools:context=".FragmentOne">
 
     <EditText
@@ -13,13 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-
-        android:autofillHints="User Name"/>
+        android:hint="UserName"/>
     <EditText
         android:id="@+id/etPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="Password"
+        android:hint="PassWord"
         android:inputType="number"
         />
     <Button
